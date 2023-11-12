@@ -1,16 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 
+:root {
+  --primary-color: #323895;
+  --secondary-color: #252a5f;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
+  background-color: var(--primary-color);
   font-family: "Young serif";
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
   margin: 0;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--secondary-color);
+}
+
+.search {
+  border-radius: 50px;
+  border: 3px solid var(--primary-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  background-color: transparent;
+}
+
+.search::placeholder {
+  color: #7378c5;
+}
+
+.search:focus {
+  outline: none;
+  background-color: var(--primary-color);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 300px;
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  
+}
+
+.movie img {
+  width: 100%;
 }
