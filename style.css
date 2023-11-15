@@ -43,6 +43,7 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .movie {
@@ -64,6 +65,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.2rem;
   padding: 0.5rem 1rem 1rem;
   letter-spacing: 0.5px;
 }
@@ -93,12 +95,14 @@ main {
   background-color: #fff;
   padding: 2rem;
   position: absolute;
+  top: 3rem;
   left: 0;
   bottom: 0;
   right: 0;
   max-height: 100%;
+  overflow-y: auto;
   transform: translateY(101%);
-  transition: transform 0.5s;
+  transition: transform 0.5s ease-in;
 }
 
 .movie:hover .overview {
