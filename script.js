@@ -1,9 +1,11 @@
+// These are the Private APIs for this project...
 const API_URL =
   "https://api.themoviedb.org/3/movie/top_rated?api_key=b5885d493bbaf8ab090e423b57f801bc&language=en-US&page=1";
 const IMG_PATH = "https://image.tmdb.org/t/p/w1280";
 const SEARCH_API =
   'https://api.themoviedb.org/3/search/movie?api_key=b5885d493bbaf8ab090e423b57f801bc&query="';
 
+  // These are the HTML elements for the further DOM manipulations....
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 const main = document.getElementById("main");
