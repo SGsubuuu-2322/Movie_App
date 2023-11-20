@@ -5,7 +5,7 @@ const IMG_PATH = "https://image.tmdb.org/t/p/w1280";
 const SEARCH_API =
   'https://api.themoviedb.org/3/search/movie?api_key=b5885d493bbaf8ab090e423b57f801bc&query="';
 
-  // These are the HTML elements for the further DOM manipulations....
+// These are the HTML elements for the further DOM manipulations....
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 const main = document.getElementById("main");
@@ -13,12 +13,14 @@ const main = document.getElementById("main");
 // Getting the initial movies...
 getMovies(API_URL);
 
+// Its the function for fetching the data or informations from the API and convert it to JSON...
 async function getMovies(url) {
   const res = await fetch(url);
   const data = await res.json();
   showMovies(data.results);
 }
 
+// Its the method for showing movies from that JSON information onto the DOM...
 function showMovies(movies) {
   main.innerHTML = "";
 
@@ -48,6 +50,7 @@ function showMovies(movies) {
   });
 }
 
+// Its the utility method for vote manipulations..
 function getClassByRate(vote) {
   if (vote >= 8) {
     return "green";
