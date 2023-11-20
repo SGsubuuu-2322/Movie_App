@@ -61,6 +61,7 @@ function getClassByRate(vote) {
   }
 }
 
+// This is eventlistener for the search and submit form...
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const searchTerm = search.value;
