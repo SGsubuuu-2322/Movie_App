@@ -1,3 +1,4 @@
+// This is the script file for the project written using Vanilla Js...
 // These are the Private APIs for this project...
 const API_URL =
   "https://api.themoviedb.org/3/movie/top_rated?api_key=b5885d493bbaf8ab090e423b57f801bc&language=en-US&page=1";
@@ -45,7 +46,7 @@ function showMovies(movies) {
         </div>
   
   `;
-
+// This will append the each and every movie card to the parent element...
     main.appendChild(movieEl);
   });
 }
