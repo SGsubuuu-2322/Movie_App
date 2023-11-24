@@ -1,3 +1,4 @@
+/* This is the styling sheet for the project written using CSS3 technology... */
 /* This is general stylings  for this project... */
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 
@@ -15,7 +16,6 @@ body {
   font-family: "Young serif";
   margin: 0;
 }
-
 
 /* This is for header section and search form... */
 header {
@@ -61,6 +61,7 @@ main {
   border-radius: 4px;
 }
 
+/* This is for movie image and info section in the movie card... */
 .movie img {
   width: 100%;
 }
